@@ -27,7 +27,8 @@ describe("niceLogger function tests", () => {
 	});	
 
 	test("niceLogger returns Hello world!", () => {
-
+        
+        // import must use var or let not const
 		niceLogger = jest.fn();
 
 		niceLogger.mockReturnValue("Hello world!");
